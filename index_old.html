@@ -14,16 +14,100 @@ body {
 
 <html>
 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
     <head>
         <meta charset="utf-8">
-        <title>Viraj Nistane - Homepage</title>
-    
-        <!-- <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> -->
-        <link rel="stylesheet" href="style.css">
+        <title>Viraj Nistane</title>
+        <style>
+            body {
+                font-family: 'Raleway';font-size: 15px;
+                }
+            body:hover {
+                background-color: #f0f0f0;
+                }
+            div.background {
+                background-image: url('images/bkg.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-size: 100% 100%
+                }
+            div.transbox {
+                margin: 50px;
+                background-color: #ffffff;
+                opacity: 0.85;
+                }
+            div.transbox p {
+                margin: 0%;
+                font-weight: bold;
+                color: #000000;
+                }
+            a:link, a:visited {
+                color: darkblue;
+                padding: 1px 2px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                }
+            a:hover, a:active {
+                background-color: greenyellow;
+                color: red;
+                }
+            .pagetitle:hover {
+                background-color: greenyellow;
+                color: red;
+                display: inline-block;
+                /* font-family: 'atlasregular', atlas; */
+                /* border: 4px dotted black; If you want dots under the hoverable text */
+                }
+            /* .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black; 
+                }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 5px 2px;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 1;
+                }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                } */
+   
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                }
+
+            /* Create two equal columns that sits next to each other */
+            .column {
+                flex: 100%;
+                padding: 0 4px;
+                }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                }
+
+            .myDIV:hover{
+                display: inline-block;
+                /* color: red; */
+                background-color: yellow;
+                }
+        </style>
+        <!-- border: 1px solid black; -->
+
 
     </head>
-
-
 
 
 
@@ -52,39 +136,16 @@ body {
         <p style="margin-top:.5em; margin-left:1.0em; font-size:4em; color=black,line-height:1;" class="myDIV">
         <!-- <p style="margin-top:1.0em; margin-left:3.0em; font-family: 'atlasregular', atlas, serif; font-size:3em; color=black,line-height=1"> -->
         <!-- <a href="index.html">Viraj Nistane</a> -->
-        Viraj Nistane
+        <strong> Viraj Nistane </strong>
         </p>
         <!-- <p><img src="images/367_PHYSIK_2019.jpeg" width="10%" style="border-style:solid" ></p> -->
         <div class="column" style="text-align:center">
             <img src="images/newphoto.jpeg" width="10%" style="border-style:solid; position:fixed; top:10em; right:50em;">
         </div>
 
-        <!-- <div class="image-grid" style="position: fixed; top: 30em; left: 50em;">
-            <div class="container">
-              <img
-                src="images/misc/geneva_lake_evening.jpg"
-                alt="Avatar"
-                class="image"
-              />
-              <div class="overlay">
-                <div class="text">Lake Geneva, Geneva, Switzerland</div>
-              </div>
-            </div>
-            <div class="container">
-                <img
-                src="images/misc/italy_sorrento.jpg"
-                alt="Avatar"
-                class="image"
-              />
-              <div class="overlay">
-                <div class="text">Mediterranean Sea, Sorrento, Italy</div>
-              </div>
-            </div>
-        </div> -->
-        
-        <!-- <div class="row" style="position: fixed; top: 2em; right: 5em;"> 
+        <div class="row" style="position: relative; top: 20em; right: 50em; width:1%;"> 
             <div class="column">
-              <img src="images/misc/geneva_lake_evening.jpg" style="width: .2; height: .1;">
+              <img src="images/misc/geneva_lake_evening.jpg">
               <img src="images/misc/italy_sorrento.jpg">
               <img src="images/misc/capri_flowers.jpg">
               <img src="images/misc/kyoto_fushimi_inari.jpg">
@@ -97,8 +158,6 @@ body {
               <img src="images/misc/munich_lake.jpg">
               <img src="images/misc/path_of_gods_hike.jpg">
               <img src="images/misc/skydive1.jpg">
-            </div>
-        </div> -->
             <!-- </div>
             <div class="column">
               <img src="wedding.jpg">
@@ -117,7 +176,7 @@ body {
               <img src="rocks.jpg">
               <img src="underwater.jpg">
             </div> -->
-          
+          </div>
 
 
         <p style="margin-top:1.0em; font-size:2em; line-height=1"> Brief bio</p>
