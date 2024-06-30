@@ -35,13 +35,45 @@ a:hover, a:active {
     background-color: greenyellow;
     color: red;
     }
-.pagetitle:hover {
-    background-color: greenyellow;
-    color: red;
+
+/* .nametitle: {
+    color: black;
     display: inline-block;
-    /* font-family: 'atlasregular', atlas; */
-    /* border: 4px dotted black; If you want dots under the hoverable text */
+    } */
+/* .nametitle {
+        display: block;
+      } */
+
+/* .nametitlemarathi {
+    display: inline-block;
+    font-family: "Noto Serif Devanagari", serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0px 0px;
+    } */
+/* .nametitle:hover span {
+    display: none;
+} */
+
+.nametitle:hover span{
+    display: none;
+}
+.nametitle:hover:after {
+    display: block;
+    /* background-color: rgb(158, 242, 255); */
+    /* color: red; */
+
+    /* font-family: "Noto Serif Devanagari", serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+    font-variation-settings: "wdth" 100;*/
+    /* padding: auto auto; */
+    content: "विराज निस्ताने";
     }
+
 /* .tooltip {
     position: relative;
     display: inline-block;
