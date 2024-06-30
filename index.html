@@ -14,11 +14,18 @@ body {
 
 <html>
 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
     <head>
         <meta charset="utf-8">
         <title>Viraj Nistane</title>
         <style>
+            body {
+                font-family: 'Raleway';font-size: 15px;
+                }
+            body:hover {
+                background-color: #f0f0f0;
+                }
             div.background {
                 background-image: url('images/bkg.jpg');
                 background-repeat: no-repeat;
@@ -29,15 +36,64 @@ body {
             div.transbox {
                 margin: 50px;
                 background-color: #ffffff;
-                opacity: 0.65;
+                opacity: 0.85;
                 }
             div.transbox p {
                 margin: 0%;
                 font-weight: bold;
                 color: #000000;
                 }
+            a:link, a:visited {
+                color: darkblue;
+                padding: 1px 2px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                }
+            a:hover, a:active {
+                background-color: greenyellow;
+                color: red;
+                }
+            .pagetitle:hover {
+                background-color: greenyellow;
+                color: red;
+                display: inline-block;
+                /* font-family: 'atlasregular', atlas; */
+                /* border: 4px dotted black; If you want dots under the hoverable text */
+                }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                }
+            /* Tooltip text */
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                padding: 5px 2px;
+                border-radius: 6px;
+                
+                /* Position the tooltip text - see examples below! */
+                position: absolute;
+                z-index: 1;
+                }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                }
+   
+            
+            .myDIV:hover{
+                display: inline-block;
+                /* color: red; */
+                background-color: yellow;
+                }
         </style>
         <!-- border: 1px solid black; -->
+
+
     </head>
 
 
@@ -62,37 +118,61 @@ body {
                 <li class=menu> <a class="menu" href="contact.html">Contact</a></li>
             </ul>
         </div>
+        
 
-        <p style="margin-top:1.0em; margin-left:3.0em; font-family: 'atlasregular', atlas, serif; font-size:3em; color=black,line-height=1">
-        <a href="index.html">Viraj Nistane</a>
+        <p style="margin-top:.5em; margin-left:1.0em; font-size:4em; color=black,line-height=1;" class="myDIV">
+        <!-- <p style="margin-top:1.0em; margin-left:3.0em; font-family: 'atlasregular', atlas, serif; font-size:3em; color=black,line-height=1"> -->
+        <!-- <a href="index.html">Viraj Nistane</a> -->
+        <strong> Viraj Nistane </strong>
         </p>
         <!-- <p><img src="images/367_PHYSIK_2019.jpeg" width="10%" style="border-style:solid" ></p> -->
-        <div class="column" style="text-align:center;">
-             <img src="images/367_PHYSIK_2019.jpeg" alt="367_PHYSIK_2019.jpeg" width="10%" style="border-style:solid">
+        <div class="column" style="text-align:center">
+            <img src="images/newphoto.jpeg" width="10%" style="border-style:solid; position:fixed; top:10em; right:50em;">
         </div>
 
+        <p style="margin-top:1.0em; font-size:2em; line-height=1"> Brief bio</p>
+        <ul style="margin-top:1.0em; font-size:1em; line-height=1">
+            <li class="myDIV"><strong> Jul 2024 - Sep 2024:</strong><br> 
+                <em>Postdoctoral Researcher</em> <br>
+                Department of Theoretical Physics, University of Geneva (Switzerland) <br><br> 
+            </li>
 
+            <li class="myDIV"><strong> Jun 2023 - Dec 2023:</strong><br> 
+                <em>Postdoctoral Researcher</em> <br>
+                Department of Theoretical Physics, University of Geneva (Switzerland) <br><br> 
+            </li>
+            
+            <li class="myDIV"><strong>Aug 2019 - Jun 2023:</strong> <br>
+                <em>Doctoral (Ph.D.) Student</em> <br>
+                Department of Theoretical Physics, University of Geneva (Switzerland) <br><br> 
+            </li>
 
-        <p style="margin-top:1.0em; font-family: 'Helvetica', helvetica, serif; font-size:2em; line-height=1"> Brief bio</p>
-        <ul style="margin-top:1.0em; font-family: 'Helvetica', helvetica, serif; font-size:1em; line-height=1">
-          <li><strong>Jun 2023 - present:</strong> <em>Postdoctoral </em> researcher at Department of Theoretical Physics, University of Geneva (Switzerland)</li>
-          <li><strong>Aug 2019 - Jun 2023:</strong> <em>Ph.D.</em> candidate at Department of Theoretical Physics, University of Geneva (Switzerland)</li>
-          <li><strong>Jun 2022 - Sep 2022:</strong> <em>Visitor</em> (JSPS Research Fellow) at Nagoya University Cosmology Group (Japan)</li>
-          <li><strong>Oct 2016 - Apr 2019:</strong> <em>M.Sc.</em> in Physics at Ludwig-Maximilian-University (LMU) Munich (Germany)</li>
-          <li><strong>Jul 2012 - May 2016:</strong> <em>B.Tech.</em> in Engineering Physics at Indian Institute of Technology (IIT) Delhi (India)</li>
+            <li class="myDIV"><strong>Jun 2022 - Sep 2022:</strong><br>
+                <em>JSPS Research Fellow</em><br> 
+                Nagoya University Cosmology Group (Japan) <br><br>
+            </li>
+
+            <li class="myDIV"><strong>Oct 2016 - Apr 2019:</strong><br> 
+                <em>Master of Science (M.Sc.)</em> Physics <br>
+                Ludwig-Maximilian-University (LMU) Munich (Germany) <br><br>
+            </li>
+            <li class="myDIV"><strong>Jul 2012 - May 2016:</strong><br>
+                <em>Bachelor of Tecnology (B.Tech.)</em> Engineering Physics<br> 
+                Indian Institute of Technology (IIT) Delhi (India) <br><br>
+            </li> 
         </ul>
 
-        <p style="margin-top:1.0em; font-family: 'Palatino', Arial, serif; font-size:2em; line-height=1">Links</p>
-        <ul style="margin-top:1.0em; font-family: 'Helvetica', helvetica, serif; font-size:1em; line-height=1.6">
+        <p style="margin-top:1.0em; font-size:2em; line-height=1">Links</p>
+        <ul style="margin-top:1.0em; font-size:1em; line-height=1.6">
         <li><a href="https://github.com/virajnistane" target="_blank"> GitHub Profile </a></li>
         <li><a href="https://cosmology.unige.ch" target="_blank"> Geneva Cosmology Group </a></li>
-        <ul> <li> <a href="https://cosmology.unige.ch/users/viraj-nistane" target="_blank"> Personal profile</a></li></ul>
-        <li><a href="https://www.unige.ch/sciences/physique/theorique/en/" target="_blank"> DPT (University of Geneva) </a></li>
+        <ul> <li> <a href="https://cosmology.unige.ch/users/viraj-nistane" target="_blank"> My profile page</a></li></ul>
+        <li><a href="https://www.unige.ch/sciences/physique/theorique/en/" target="_blank"> Department of Theoretical Physics (University of Geneva) </a></li>
         <li><a href="https://www.linkedin.com/in/viraj-nistane/" target="_blank"> LinkedIn profile</a></li>
         </ul>
 
-        <p style="margin-top:1.0em; font-family: 'Palatino', Arial, serif; font-size:2em; line-height=1">Other (Interesting) links</p>
-        <ul style="margin-top:1.0em; font-family: 'Helvetica', helvetica, serif; font-size:1em; line-height=1.6">
+        <p style="margin-top:1.0em; font-size:2em; line-height=1">Other (Interesting) links</p>
+        <ul style="margin-top:1.0em; font-size:1em; line-height=1.6">
             <li><a href="http://detexify.kirelabs.org/classify.html" target="_blank"> Detexify</a> - find latex code for any symbol/character</li>
         <li><a href="https://texnique.xyz/" target="_blank"> texnique</a> - latex typesetting game</li>
         <li><a href="https://git-scm.com/book/en/v2" target="_blank">Git</a> book</li>
