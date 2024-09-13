@@ -96,7 +96,7 @@ a:hover, a:active {
 
 
 
-.myDIV:hover{
+.myDIV_hoverhighlight:hover{
     display: inline-block;
     /* color: red; */
     background-color: yellow;
