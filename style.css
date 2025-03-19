@@ -5,7 +5,8 @@ body {
     src: url(https://fonts.googleapis.com/css?family=Raleway);
     }
 body:hover {
-    background-color: #f0f0f0;
+    background-color: #ffffff69;
+    /* background-color: #f0f0f0; */
     }
 div.background {
     background-image: url('images/bkg.jpg');
@@ -15,16 +16,19 @@ div.background {
     background-size: 100% 100%
     }
 div.transbox {
-    margin: 50px;
+    /* margin: 5%; */
     background-color: #ffffff;
-    opacity: 0.85;
+    opacity: 0.8;
     }
 div.transbox p {
+    display: inline-flexbox;
     margin: 0%;
     font-weight: bold;
     color: #000000;
+    background-color: #f0f0f0;
     }
 a:link, a:visited {
+    background-color: #f0f0f0;
     color: darkblue;
     padding: 1px 2px;
     text-align: center;
@@ -61,7 +65,7 @@ a:hover, a:active {
     display: none;
 }
 .nametitle:hover:after {
-    display: block;
+    display: inline-block;
     /* background-color: rgb(158, 242, 255); */
     /* color: red; */
 
@@ -95,6 +99,11 @@ a:hover, a:active {
     } */
 
 
+.myDIV_hoverhighlight{
+    display: inline-block;
+    /* color: red; */
+    background-color: #f0f0f0;
+    }
 
 .myDIV_hoverhighlight:hover{
     display: inline-block;
