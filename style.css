@@ -16,7 +16,7 @@ div.background {
     background-size: 100% 100%
     }
 div.transbox {
-    /* margin: 5%; */
+    margin: 5%;
     background-color: #ffffff;
     opacity: 0.8;
     }
@@ -25,10 +25,12 @@ div.transbox p {
     margin: 0%;
     font-weight: bold;
     color: #000000;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #ffffff69;
     }
 a:link, a:visited {
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #ffffff69;
     color: darkblue;
     padding: 1px 2px;
     text-align: center;
@@ -100,16 +102,17 @@ a:hover, a:active {
 
 
 .myDIV_hoverhighlight{
-    display: inline-block;
+    display: list-item;
     /* color: red; */
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #ffffff69;
     }
 
-.myDIV_hoverhighlight:hover{
+.myDIV_hoverhighlight:hover {
     display: inline-block;
-    /* color: red; */
-    background-color: yellow;
-    }
+    background-color: rgba(255, 255, 0, 1); /* Use rgba for full opacity */
+    list-style: inherit;
+}
 
 
 /* Image grid */
@@ -178,4 +181,8 @@ a:hover, a:active {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    }
+
+li:not(:last-child) {
+        margin-bottom: 10px;
     }
