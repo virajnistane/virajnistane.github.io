@@ -17,7 +17,7 @@ const links = [
     icon: Linkedin,
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/virajnistane/",
-    display: "linkedin.com/in/viraj-nistane",
+    display: "linkedin.com/in/virajnistane",
   },
   {
     icon: Phone,
