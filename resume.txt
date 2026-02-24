@@ -1,0 +1,154 @@
+github.com/virajnistane
+
++33 (0)7 59 32 11 18
+
+Nationality: India
+
+Data Scientist
+
+linkedin.com/in/virajnistane
+
+Nice, France
+
+Summary
+• Research/Data Engineer with Ph.D. in Theoretical Physics and hands-on experience building production-grade data
+pipelines using Python, SQL, and modern DevOps practices
+• Skilled in e cient ETL routines, work ow orchestration, and data quality/observability; Strong research background in
+simulation-driven analysis and mathematical modelling
+• Highly motivated to support Global Strategy and Planning team at Uber Eats through robust data solutions, forwardlooking metrics that inform merchant selection, market sizing, and opportunity evaluation
+
+Work Experience
+Data Engineer || Tough Tongue AI, Remote
+05/2025 - Present
+- Designed and operated advanced ETL routines, transforming semi-structured noSQL application data to reliable
+analytical products in PostgreSQL, optimised for bulk data ingestion, throughput, and transformation e ciency
+- Orchestrated and automated analytics work ows using Prefect/Cronitor (DAG-style scheduling, retries, alerts),
+feeding up-to-date metrics into Marimo dashboards supporting product, nance, and operations decisions.
+- Implemented testing, logging, and basic observability on pipelines, enabling faster incident detection and more
+reliable, repeatable releases in a small, fast-moving team
+- Delivered actionable insights on usage, retention, and system performance, directly supporting product strategy
+and competitive performance, while enhancing user engagement
+Research Software Engineer || Observatoire de la Côte d’Azur, Nice, France
+10/2024 - Present
+- Built and maintained a user-oriented data quality-control platform (EuclidClusterViz), streamlining development
+as well as production data access and signi cantly boosting research turnarounds for scienti c users
+- Developed modular data pipelines for robust, scalable, and compliant scienti c data ow, with documentation that
+enabled self-service use across a diverse scienti c team
+- Integrated CI/CD practices using GitLab and Jenkins, supporting modular development, automated testing, and
+seamless deployments for complex, long-running data work ows
+- Designed a exible Pipeline Processing Order (PPO) framework to orchestrate and optimize computation, ensuring
+reliable, dependency-aware task execution across research work ows
+Doctoral/Post-doctoral Researcher || Université de Genève, Geneva, Switzerland
+08/2019 - 09/2024
+- Led simulation-driven parameter forecasting studies in large-scale astronomical collaboration, framing outputs as
+opportunity-evaluation analyses that compared various survey con gurations and quanti ed their impact on
+scienti c yield under resource constraints
+- Developed a robust Python package (HIRAXmcmc) enabling e cient Bayesian analysis and forecasting
+- Engineered and validated an advanced statistical estimator to extract weak signals from noisy spatial density data,
+boosting signal-to-noise by 30-38x through optimized variance reduction
+- Co-developed SERENEt, a deep learning framework for recovering astrophysical signals from contaminated radio
+images, including extracting and structuring training data from external GLEAM-MWA online catalogs into reliable
+analytical datasets
+
+Education
+Ph.D. (Physics)
+
+08/2019 - 06/2023
+
+Université de Genève, Geneva, Switzerland
+
+M.Sc. (Physics)
+
+09/2016 - 04/2019
+
+Ludwig-Maximilians-Universität München, Munich, Germany
+
+B.Tech. (Engineering Physics)
+
+07/2012 - 05/2016
+
+Indian Institute of Technology Delhi, New Delhi, India
+
+Skills
+Programming
+
+Python | Deep Learning | Machine Learning | SQL | NoSQL | Git | Bash | Jenkins | Marimo | Databricks
+
+Libraries/
+Frameworks
+
+Tensor ow | Keras | Pandas | Scipy | Numpy | Matplotlib | Plotly | Pytest | XML | JSON | SQLAlchemy |
+Prefect | PyMongo | PySpark | DeltaLake | Asyncio | OOP | DevOps | Agile Software Development |
+SSH | Docker
+
+HPC
+
+Slurm | Parallel Programming | Distributed Systems | OpenMPI | GPU Programming
+
+Others
+
+Mathematical Modelling | Statistical Analysis | Data Visualisation | Communication | Critical Thinking
+
+Languages
+
+English (C2) | French (B1) | German (A1) | Hindi (C2) | Marathi (C2, Native)
+
+ffi
+
+fi
+
+fi
+
+fl
+
+fi
+
+fi
+
+fi
+
+fl
+
+ffi
+
+fl
+
+fi
+
+fl
+
+fi
+
+fl
+
+fl
+
+ffi
+
+References
+Available on request
+
+fi
+
+Awards
+FY2021 JSPS Fellowships for Research in Japan (Strategic Program)
+
+fl
+
+h
+
+P
+
+g
+
+l
+
+p
+
+e
+
+Viraj Nistane
+
+nato.viraj@gmail.com
+
+
