@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, MapPin, Code2 } from "lucide-react";
 
 const links = [
   {
@@ -20,6 +20,12 @@ const links = [
     display: "linkedin.com/in/virajnistane",
   },
   {
+    icon: Code2,
+    label: "HackerRank",
+    href: "https://www.hackerrank.com/profile/nato_viraj",
+    display: "hackerrank.com/profile/nato_viraj",
+  },
+  {
     icon: Phone,
     label: "Phone",
     href: "tel:+33759321118",
@@ -37,8 +43,8 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-slate-300 leading-relaxed mb-6">
-              I&apos;m open to opportunities in data engineering, scientific
-              computing, and research software. Whether you have a question or
+              I&apos;m open to opportunities in data science and engineering, 
+              and software engineering. Whether you have a question or
               just want to say hi, feel free to reach out!
             </p>
             <p className="flex items-center gap-2 text-sm text-slate-400">

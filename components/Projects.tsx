@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
@@ -7,6 +7,7 @@ const projects = [
     description:
       "Contributing to the Euclid space telescope mission as a CNRS Research Software Engineer. Built EuclidClusterViz, a data quality-control platform for scientific users, and developed modular pipelines for compliant scientific data flow.",
     href: "https://sci.esa.int/web/euclid/",
+    githubHref: "https://github.com/virajnistane/EuclidClusterViz",
     tags: ["Cosmology", "Data Pipelines", "CI/CD", "Python"],
   },
   {
@@ -61,17 +62,30 @@ export default function Projects() {
                   <h3 className="text-base font-semibold text-slate-100 group-hover:text-teal-400 transition-colors leading-tight">
                     {project.name}
                   </h3>
-                  {project.href && (
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-600 hover:text-teal-400 transition-colors ml-2 shrink-0"
-                      aria-label={`Visit ${project.name}`}
-                    >
-                      <ExternalLink size={15} />
-                    </a>
-                  )}
+                  <div className="flex items-center gap-2 ml-2 shrink-0">
+                    {"githubHref" in project && project.githubHref && (
+                      <a
+                        href={project.githubHref as string}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-600 hover:text-teal-400 transition-colors"
+                        aria-label={`GitHub: ${project.name}`}
+                      >
+                        <Github size={15} />
+                      </a>
+                    )}
+                    {project.href && (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-600 hover:text-teal-400 transition-colors"
+                        aria-label={`Visit ${project.name}`}
+                      >
+                        <ExternalLink size={15} />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className="text-xs text-teal-400 mb-3">{project.short}</p>
                 <p className="text-sm text-slate-400 leading-relaxed">

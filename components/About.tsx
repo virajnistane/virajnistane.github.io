@@ -69,7 +69,28 @@ export default function About() {
               </ul>
             </div>
 
-            {/* External profiles */}
+            {/* Coding profiles */}
+            <div className="card space-y-2">
+              <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">
+                Coding Profiles
+              </h3>
+              {[
+                ["GitHub", "https://github.com/virajnistane"],
+                ["HackerRank", "https://www.hackerrank.com/profile/nato_viraj"],
+              ].map(([label, url]) => (
+                <a
+                  key={label}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm text-teal-400 hover:text-teal-300 transition-colors"
+                >
+                  → {label}
+                </a>
+              ))}
+            </div>
+
+            {/* Research profiles */}
             <div className="card space-y-2">
               <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">
                 Research Profiles
