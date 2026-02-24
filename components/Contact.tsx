@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 const links = [
   {
     icon: Mail,
-    label: "nato.viraj@gmail.com",
+    label: "Email",
     href: "mailto:nato.viraj@gmail.com",
     display: "nato.viraj@gmail.com",
   },
