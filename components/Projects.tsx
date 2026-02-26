@@ -2,6 +2,15 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    name: "alexiAId",
+    short: "Emotion Translator — Tough Tongue AI",
+    description:
+      "Production-ready emotion translation and coaching app for alexithymic individuals — built with Next.js 15, TypeScript, Firebase, and the Tough Tongue AI API (implemented at Tough Tongue AI). Features an AI emotion coach, interactive assessments, emotion journaling, progress dashboard, and an admin analytics panel.",
+    href: "https://alexi-aid.vercel.app/",
+    githubHref: "https://github.com/virajnistane/alexiAId",
+    tags: ["Next.js", "TypeScript", "Firebase", "Tough Tongue AI", "Tailwind CSS", "Zustand"],
+  },
+  {
     name: "ESA Euclid Mission",
     short: "European Space Agency",
     description:
