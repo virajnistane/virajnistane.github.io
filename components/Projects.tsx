@@ -1,6 +1,15 @@
 import { ExternalLink, Github } from "lucide-react";
 
-const projects = [
+interface Project {
+  name: string;
+  short: string;
+  description: string;
+  href?: string;
+  githubHref?: string;
+  tags: string[];
+}
+
+const projects: Project[] = [
   {
     name: "alexiAId",
     short: "Emotion Translator — Tough Tongue AI",
@@ -11,13 +20,39 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Firebase", "Tough Tongue AI", "Tailwind CSS", "Zustand"],
   },
   {
-    name: "ESA Euclid Mission",
-    short: "European Space Agency",
+    name: "EuclidClusterViz",
+    short: "Data Quality-Control Platform · Euclid Mission",
     description:
-      "Contributing to the Euclid space telescope mission as a CNRS Research Software Engineer. Built EuclidClusterViz, a data quality-control platform for scientific users, and developed modular pipelines for compliant scientific data flow.",
-    href: "https://sci.esa.int/web/euclid/",
+      "User-oriented data QC platform for the Euclid mission, streamlining development and production data access for scientific users. Features modular pipelines, self-service documentation, and CI/CD integration with GitLab & Jenkins.",
     githubHref: "https://github.com/virajnistane/EuclidClusterViz",
-    tags: ["Cosmology", "Data Pipelines", "CI/CD", "Python"],
+    tags: ["Python", "GitLab CI/CD", "Jenkins", "Docker", "Data Quality"],
+  },
+  {
+    name: "SERENEt",
+    short: "Deep Learning for Radio Astronomy",
+    description:
+      "Co-developed SERENEt, a deep learning framework using TensorFlow/Keras to recover astrophysical signals from contaminated radio images. Included building structured training datasets by extracting and parsing data from the GLEAM-MWA online catalog.",
+    githubHref: "https://github.com/micbia/serenet", 
+    tags: ["TensorFlow", "Keras", "Deep Learning", "Radio Astronomy"],
+  },
+  {
+    name: "HIRAXmcmc",
+    short: "Python Package",
+    description:
+      "Open-source Python package for efficient Bayesian analysis and MCMC-based parameter forecasting for HIRAX cosmology experiments. Enables simulation-driven survey configuration comparisons.",
+    githubHref: "https://github.com/virajnistane/HIRAXmcmc",
+    tags: ["Python", "MCMC", "Bayesian", "Open Source"],
+  },
+];
+
+const collaborations: Project[] = [
+  {
+    name: "ESA Euclid Mission",
+    short: "European Space Agency · CNRS",
+    description:
+      "Contributing to ESA's Euclid space telescope mission as a CNRS Research Software Engineer at Observatoire de la Côte d'Azur. Developed modular scientific data pipelines and a PPO framework for dependency-aware workflow orchestration.",
+    href: "https://sci.esa.int/web/euclid/",
+    tags: ["Cosmology", "Data Pipelines", "CI/CD", "Python", "Jenkins"],
   },
   {
     name: "HIRAX",
@@ -35,81 +70,74 @@ const projects = [
     href: "https://skach.org",
     tags: ["21-cm Cosmology", "Signal Processing", "Research"],
   },
-  {
-    name: "SERENEt",
-    short: "Deep Learning for Radio Astronomy",
-    description:
-      "Co-developed SERENEt, a deep learning framework using TensorFlow/Keras to recover astrophysical signals from contaminated radio images. Included building structured training datasets by extracting and parsing data from the GLEAM-MWA online catalog.",
-    href: "",
-    tags: ["TensorFlow", "Keras", "Deep Learning", "Radio Astronomy"],
-  },
-  {
-    name: "HIRAXmcmc",
-    short: "Python Package",
-    description:
-      "Open-source Python package for efficient Bayesian analysis and MCMC-based parameter forecasting for HIRAX cosmology experiments. Enables simulation-driven survey configuration comparisons.",
-    href: "https://github.com/virajnistane",
-    tags: ["Python", "MCMC", "Bayesian", "Open Source"],
-  },
 ];
+
+function ProjectCard({ project }: { project: Project }) {
+  return (
+    <div className="card group flex flex-col justify-between">
+      <div>
+        <div className="flex items-start justify-between mb-2">
+          <h3 className="text-base font-semibold text-slate-100 group-hover:text-teal-400 transition-colors leading-tight">
+            {project.name}
+          </h3>
+          <div className="flex items-center gap-2 ml-2 shrink-0">
+            {project.githubHref && (
+              <a
+                href={project.githubHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-teal-400 transition-colors"
+                aria-label={`GitHub: ${project.name}`}
+              >
+                <Github size={15} />
+              </a>
+            )}
+            {project.href && (
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 hover:text-teal-400 transition-colors"
+                aria-label={`Visit ${project.name}`}
+              >
+                <ExternalLink size={15} />
+              </a>
+            )}
+          </div>
+        </div>
+        <p className="text-xs text-teal-400 mb-3">{project.short}</p>
+        <p className="text-sm text-slate-400 leading-relaxed">{project.description}</p>
+      </div>
+      <div className="flex flex-wrap gap-2 mt-4">
+        {project.tags.map((tag) => (
+          <span key={tag} className="tag">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-slate-900/40">
       <div className="max-w-5xl mx-auto">
-        <h2 className="section-heading">Projects & Collaborations</h2>
+        <h2 className="section-heading">Projects</h2>
+        <span className="section-subline" />
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {projects.map((project) => (
+            <ProjectCard key={project.name} project={project} />
+          ))}
+        </div>
+
+        <h2 className="section-heading">Collaborations</h2>
         <span className="section-subline" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <div
-              key={project.name}
-              className="card group flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-base font-semibold text-slate-100 group-hover:text-teal-400 transition-colors leading-tight">
-                    {project.name}
-                  </h3>
-                  <div className="flex items-center gap-2 ml-2 shrink-0">
-                    {"githubHref" in project && project.githubHref && (
-                      <a
-                        href={project.githubHref as string}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-600 hover:text-teal-400 transition-colors"
-                        aria-label={`GitHub: ${project.name}`}
-                      >
-                        <Github size={15} />
-                      </a>
-                    )}
-                    {project.href && (
-                      <a
-                        href={project.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-slate-600 hover:text-teal-400 transition-colors"
-                        aria-label={`Visit ${project.name}`}
-                      >
-                        <ExternalLink size={15} />
-                      </a>
-                    )}
-                  </div>
-                </div>
-                <p className="text-xs text-teal-400 mb-3">{project.short}</p>
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 mt-4">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+          {collaborations.map((project) => (
+            <ProjectCard key={project.name} project={project} />
           ))}
         </div>
       </div>
