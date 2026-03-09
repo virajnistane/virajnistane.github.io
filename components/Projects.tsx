@@ -11,6 +11,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "FloodRiskMapping",
+    short: "Flood Risk Assessment & Mapping",
+    description:
+      "Geospatial analysis and risk assessment tool for flood-prone areas. Implements data-driven modeling and visualization techniques for flood risk evaluation and mapping.",
+    githubHref: "https://github.com/virajnistane/FloodRiskMapping",
+    tags: ["Geospatial", "Risk Assessment", "Data Analysis", "Python"],
+  },
+  {
     name: "alexiAId",
     short: "Emotion Translator — Tough Tongue AI",
     description:
