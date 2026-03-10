@@ -14,9 +14,9 @@ const projects: Project[] = [
     name: "FloodRiskMapping",
     short: "Flood Risk Assessment & Mapping",
     description:
-      "Geospatial analysis and risk assessment tool for flood-prone areas. Implements data-driven modeling and visualization techniques for flood risk evaluation and mapping.",
+      "A containerized Python pipeline for flood exposure mapping using open Copernicus DEM data. Identifies flood-prone areas via water-level thresholding, generates vector polygons, calculates statistics, and integrates DVC for cloud-based data versioning. Built with rasterio, GeoPandas, and Docker for reproducible geospatial workflows.",
     githubHref: "https://github.com/virajnistane/FloodRiskMapping",
-    tags: ["Geospatial", "Risk Assessment", "Data Analysis", "Python"],
+    tags: ["Python", "Docker", "GeoPandas", "Rasterio", "DVC", "AWS S3"],
   },
   {
     name: "alexiAId",
