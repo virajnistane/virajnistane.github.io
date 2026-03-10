@@ -42,7 +42,7 @@ export default function Hero() {
         {/* CTA links */}
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
           <a
-            href="#experience"
+            href="#projects"
             className="px-6 py-3 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold rounded-lg transition-colors duration-200 text-sm"
           >
             View My Work
