@@ -19,6 +19,14 @@ const projects: Project[] = [
     tags: ["Python", "Docker", "GeoPandas", "Rasterio", "DVC", "AWS S3"],
   },
   {
+    name: "CRIC-SiteRegistry",
+    short: "Computing Resource Information Catalogue",
+    description:
+      "Django REST Framework service for managing and cataloging HPC computing site registrations. Inspired by CERN's CRIC system for distributed computing infrastructure. Features REST API for site management, Docker deployment with PostgreSQL, pytest test suite, and CI/CD pipeline with GitHub Actions.",
+    githubHref: "https://github.com/virajnistane/CRIC-SiteRegistry",
+    tags: ["Django", "REST API", "PostgreSQL", "Docker", "pytest", "GitHub Actions"],
+  },
+  {
     name: "alexiAId",
     short: "Emotion Translator — Tough Tongue AI",
     description:
