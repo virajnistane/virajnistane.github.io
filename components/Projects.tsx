@@ -59,6 +59,14 @@ const projects: Project[] = [
     githubHref: "https://github.com/virajnistane/HIRAXmcmc",
     tags: ["Python", "MCMC", "Bayesian", "Open Source"],
   },
+  {
+    name: "k8s-url-shortener",
+    short: "Kubernetes URL Shortener",
+    description:
+      "A simple URL shortening service built on Kubernetes. Features a REST API for creating and resolving short URLs, with a PostgreSQL database for storage.",
+    githubHref: "https://github.com/virajnistane/k8s-url-shortener",
+    tags: ["Kubernetes", "REST API", "PostgreSQL", "Docker", "pytest", "GitHub Actions"],
+  },
 ];
 
 const collaborations: Project[] = [
