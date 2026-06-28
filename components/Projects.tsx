@@ -22,7 +22,7 @@ const projects: Project[] = [
     name: "CRIC-SiteRegistry",
     short: "Computing Resource Information Catalogue",
     description:
-      "Django REST Framework service for managing and cataloging HPC computing site registrations. Inspired by CERN's CRIC system for distributed computing infrastructure. Features REST API for site management, Docker deployment with PostgreSQL, pytest test suite, and CI/CD pipeline with GitHub Actions.",
+      " CRIC-inspired platform for HPC site inventory with a Django REST backend and a PyQt desktop interface for CRUD and status tracking. Supports PostgreSQL database, Docker deployment, and automated testing with pytest and GitHub Actions.",
     githubHref: "https://github.com/virajnistane/CRIC-SiteRegistry",
     tags: ["Django", "REST API", "PostgreSQL", "Docker", "pytest", "GitHub Actions"],
   },
