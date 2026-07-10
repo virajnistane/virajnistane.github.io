@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Viraj Nistane | Data Scientist & Research Engineer",
   description:
-    "Portfolio of Viraj Nistane — Data Scientist and Research/Data Engineer with a PhD in Theoretical Physics. Experienced in Python, SQL, ETL pipelines, machine learning, and scientific computing.",
+    "Portfolio of Viraj Nistane — Research/Data Engineer with a PhD in Theoretical Physics. Experienced in Python, SQL, ETL pipelines, machine learning, and scientific computing.",
   keywords: [
     "Viraj Nistane",
-    "Data Scientist",
     "Research Engineer",
+    "Data Scientist",
     "Python",
     "Machine Learning",
     "Cosmology",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Viraj Nistane" }],
   openGraph: {
-    title: "Viraj Nistane | Data Scientist & Research Engineer",
+    title: "Viraj Nistane | (Research) Software Engineer & Data Scientist",
     description:
-      "Portfolio of Viraj Nistane — Data Scientist and Research Engineer.",
+      "Portfolio of Viraj Nistane — (Research) Software Engineer and Data Scientist.",
     type: "website",
   },
 };
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-slate-950 text-slate-100 antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
