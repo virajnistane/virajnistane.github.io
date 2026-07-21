@@ -67,6 +67,13 @@ const projects: Project[] = [
     githubHref: "https://github.com/virajnistane/k8s-url-shortener",
     tags: ["Kubernetes", "REST API", "PostgreSQL", "Docker", "pytest", "GitHub Actions"],
   },
+  {
+  name: "Personal Project (Private)",
+  short: "In Development (Private Repo)",
+  description:
+    "Architected and actively developing a production-oriented full-stack web application using modern React and TypeScript tooling. Focused on reusable component architecture, maintainable code organization, and deployment-ready workflows. Repository is private; code walkthrough available upon request.",
+  tags: ["React", "TypeScript", "Next.js", "Architecture", "In Development"],
+  },
 ];
 
 const collaborations: Project[] = [
