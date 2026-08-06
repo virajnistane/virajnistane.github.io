@@ -22,9 +22,9 @@ const projects: Project[] = [
     name: "CRIC-SiteRegistry",
     short: "Computing Resource Information Catalogue",
     description:
-      "CRIC-inspired HPC site inventory platform with a Django REST backend, PyQt desktop client, and optional C++ site scoring extension for CRUD, status tracking, and ranking. Supports PostgreSQL, Docker deployment, and automated testing with pytest and GitHub Actions.",
+      "CRIC-inspired HPC site inventory platform with a Django REST backend, PyQt desktop client, and optional C++ site scoring extension for CRUD, status tracking, and ranking. Supports PostgreSQL, Docker/Kubernetes (Helm) deployment, and automated testing with pytest and GitHub Actions.",
     githubHref: "https://github.com/virajnistane/CRIC-SiteRegistry",
-    tags: ["Django", "REST API", "PyQt", "C++", "PostgreSQL", "Docker", "pytest", "GitHub Actions"],
+    tags: ["Django", "REST API", "PyQt", "C++", "PostgreSQL", "Docker", "pytest", "GitHub Actions", "Kubernetes", "Helm"],
   },
   {
     name: "alexiAId",
