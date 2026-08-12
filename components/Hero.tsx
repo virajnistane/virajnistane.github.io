@@ -27,7 +27,7 @@ export default function Hero() {
           Viraj Nistane
         </h1>
         <p className="text-xl md:text-2xl text-slate-400 font-light mb-2">
-          Data Scientist &amp; Research Engineer
+          Research (Software) Engineer &amp; Data Scientist
         </p>
         <p className="text-slate-500 text-sm mb-8 flex items-center justify-center gap-1.5">
           <MapPin size={14} className="text-teal-500" />
